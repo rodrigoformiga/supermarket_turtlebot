@@ -13,29 +13,29 @@ Com uso de um simples *script* em python, realizar um loop em 9 pontos do ambien
 ## Ambiente de simulação
 O ambiente escolhido foi simplificado para melhorar o desempenho e velocidade da simulação. Conforme a figura abaixo.
 
-![World](https://github.com/rodrigoformiga/supermarket_turtlebot/images/world.png)
+![World](https://github.com/rodrigoformiga/supermarket_turtlebot/blob/main/images/world.png)
 
 ## Criação do mapa
 
 O mapa foi remotamente criado e então capturado para utilizar em etapas seguintes. O vídeo e a imagem abaixo mostram detalhes dessa etapa.
 
-![Mapping](https://github.com/rodrigoformiga/supermarket_turtlebot/images/etapa1.gif)
+![Mapping](https://github.com/rodrigoformiga/supermarket_turtlebot/blob/main/images/etapa1.gif)
 
-![Map](https://github.com/rodrigoformiga/supermarket_turtlebot/images/map.png)
+![Map](https://github.com/rodrigoformiga/supermarket_turtlebot/blob/main/images/map.png)
 
 ## Navegação - move_base
 
 Com o pacote move_base foram enviados comandos de posição via *Rviz* e via terminal. O vídeo demonstra esse teste.
 
-![Move_base](https://github.com/rodrigoformiga/supermarket_turtlebot/images/etapa2.gif)
+![Move_base](https://github.com/rodrigoformiga/supermarket_turtlebot/blob/main/images/etapa2.gif)
 
 ## Loop de navegação (8 pontos)
 
 Por fim, a simulação contou com um *loop* de navegação entre pontos determinados, conforme apresentado na imagem e vídeo.
 
-![Points](https://github.com/rodrigoformiga/supermarket_turtlebot/images/points/map.gif)
+![Points](https://github.com/rodrigoformiga/supermarket_turtlebot/blob/main/images/points_map.gif)
 
-![Loop Navigation](https://github.com/rodrigoformiga/supermarket_turtlebot/images/etapa3.gif)
+![Loop Navigation](https://github.com/rodrigoformiga/supermarket_turtlebot/blob/main/images/etapa3.gif)
 
 
 # Requisitos para simulação
@@ -45,13 +45,19 @@ Por fim, a simulação contou com um *loop* de navegação entre pontos determin
         * Gmapping (sudo apt-get install ros-kinetic-gmapping-*)
         * Turtlebot3 (sudo apt-get install ros-kinetic-turtlebot3-*)
         * Teleop_twist (sudo apt-get install ros-kinetic-teleop_twist-*)
+        * git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
 
 # Run 
+    ~/catkin_ws/src$ git clone git@github.com:rodrigoformiga/supermarket_turtlebot.git
 
-    ~$ roslaunch supermarket seletivo.launch
+    ~/catkin_ws$ catkin_make 
 
-    ~$ export TURTLEBOT3_MODEL=burger
+    ~/catkin_ws$ source devel/setup.bash
 
-    ~$ roslaunch supermarket nave.launch
+    ~/catkin_ws$ roslaunch supermarket seletivo.launch
 
-    ~$ rosrun supermarket mission.py
+    ~/catkin_ws$ export TURTLEBOT3_MODEL=burger
+
+    ~/catkin_ws$ roslaunch supermarket nave.launch
+
+    ~/catkin_ws$ rosrun supermarket mission.py
