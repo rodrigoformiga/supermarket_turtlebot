@@ -1,6 +1,9 @@
 ## Supermarket Simulation - Turtlebot3 Bugger
 
 Este repositório foi criado com a finalidade de simular a plataforma Turtlebot3 (Bugger model) em modelo simplificado de Supermercado. A simulação foi divida em 3 etapas.
+
+*Vídeos completos da simulação estão na pasta "images/videos"*
+
 ### Etapa 1:
 Realizar mapeamento remoto do ambiente utilizando o *SLAM Gmapping*.
 
