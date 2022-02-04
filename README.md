@@ -33,7 +33,7 @@ Com o pacote move_base foram enviados comandos de posição via *Rviz* e via ter
 
 Por fim, a simulação contou com um *loop* de navegação entre pontos determinados, conforme apresentado na imagem e vídeo.
 
-![Points](https://github.com/rodrigoformiga/supermarket_turtlebot/blob/main/images/points_map.gif)
+![Points](https://github.com/rodrigoformiga/supermarket_turtlebot/blob/main/images/points_map.png)
 
 ![Loop Navigation](https://github.com/rodrigoformiga/supermarket_turtlebot/blob/main/images/etapa3.gif)
 
