@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+<sdf version='1.4'>
+  <world name='supermarket'>
+
+    <!-- <gui>
+      <camera name="camera">
+        <pose>43 7 27.3 0 0.79 3.12</pose>
+      </camera>
+    </gui>
+
+    <scene>
+      <grid>false</grid>
+    </scene> -->
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+      <pose>0 0 0 0 0 0</pose>
+      <uri>model://supermarket</uri>
+    </include>
+
+    <!-- <include>
+       <pose>18.641460 2.657055 0.699628 1.5707 0 0</pose>
+      <uri>model://aruco_id200_4_4_250</uri>
+    </include> -->
+  </world>
+</sdf>
